@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Adjust the height as needed */
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+.heading1 {
+    position: absolute;
+    top: 40%; /* Adjust vertically */
+    left: 60%; /* Adjust horizontally */
+    transform: translate(-50%, -50%);
+    color: rgb(240, 231, 231);
+    font-size: 2rem;
+    z-index: 1;
+    text-align: left; /* Center the text */
+    width: 100%; /* Make sure the text is centered */
+  }
+  .right-side{
+    position: absolute;
+    top: 40%; /* Adjust vertically */
+    left: 45%; /* Adjust horizontally */
+    transform: translate(-50%, -50%);
+    color: rgb(240, 231, 231);
+    font-size: 1rem;
+    z-index: 1;
+    text-align: right; /* Center the text */
+    width: 100%; /* Make sure the text is centered */
+  }
+  
+.background-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+.section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .content h2{
+    font-family: "Oswald", sans-serif;
+    color: rgb(29, 28, 28);
+  }
+  
+  .content p{
+    font-family: "Archivo", sans-serif;
+    color: #524e4e;
+    font-size: 15px;
+    text-align: justify;
+    
+  }
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .image {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Your existing styles */
+
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    color: rgb(92, 86, 86);
+    border: 1px solid #333232; /* Add border to buttons */
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+  .buttons button i {
+    margin-right: 5px; /* Add space between icon and text */
+    font-size: 17px;
+  }
+  
+  .buttons button i:hover {
+    color: rgb(67, 221, 195); /* Change text color on hover */
+  }
+
+  /* Other CSS styles */
+
+/* Other CSS styles */
+
+.service-buttons {
+    display: flex;
+    justify-content: left;
+  }
+  
+  .service-buttons button {
+    margin-right: 0px;
+    padding: 20px;
+    font-size: 16px;
+    background-color: white;
+    color: rgb(119, 114, 114);
+    border: 1px solid #a8acb1; /* Add border */
+    cursor: pointer;
+    border-radius: 2px;
+  }
+  
+  .service-buttons button:hover {
+
+    color: rgb(230, 52, 52);
+  }
+  
+  /* Other CSS styles */
+  
+  .service-details p {
+    border: 1px solid #ccc; /* Add border around the paragraphs */
+    padding: 10px; /* Add padding for spacing */
+    margin: 0; /* Remove default margin */
+    background-color: white;
+  }
+  
+  .service-details ul {
+    border: 1px solid #ccc; /* Add border around the unordered list */
+    padding: 10px; /* Add padding for spacing */
+    margin: 0; /* Remove default margin */
+    background-color: white;
+  }
+  
+
+.service-details ul {
+    list-style-type: none; /* Remove bullets */
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  .service-details li {
+    margin-bottom: 5px;/* Add some spacing between list items */
+  }
+  .service-details i{
+    border: 2px solid #df1d1d;
+    background-color: #df1d1d;
+    border-radius: 10px;
+    color: aliceblue;
+  }
+  
+  
+  .service-buttons button:hover {
+    color: #d32727;
+  }
+  /* Other CSS styles */
+
+
+  
+  
+
+/* Add this style to your CSS file */
+.horizontal-line {
+  width: 30%; /* You can adjust the width as needed */
+  margin: 12px; /* You can adjust the margin */
+  border-top: 1.5px solid #b2b8b8; /* You can adjust the color and style */
+  cursor: pointer;
+  transition: linear 60s ease; /* Add smooth transition */
+}
+
+.horizontal-line.clicked {
+  border-top: 1.5px solid #4ef0e2; /* Change color when clicked */
+}
+
+.horizontal-line:hover {
+  border-top: 1.5px solid #43dbba; /* Change color on hover */
+}
+
+  
+  /* Other CSS styles */
+  
+  .section .content{
+    flex: 1;
+  padding: 20px;
+  padding-left: 90px;
+  }
+  
+  @media (max-width: 768px) {
+    .section {
+      flex-direction: column;
+    }
+  
+    .content {
+      padding: 20px;
+      padding-left: 10px; /* Adjust as needed */
+      padding-right: 20px; /* Adjust as needed */
+    }
+  
+    .background-image .heading1 {
+      left: 50%; /* Center heading in mobile view */
+      transform: translateX(-50%);
+      text-align: left;
+     
+    }
+  
+    .right-side {
+      left: 50%; /* Center text in mobile view */
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    .service-details p {
+      text-align: justify;
+      padding-left: 0; /* Remove left padding in mobile view */
+    }
+    .background-image .heading1 {
+      left: 50%; /* Center heading in mobile view */
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    .background-image h5 {
+      margin-top: 10px; /* Adjust the margin-top as needed */
+    }
+  }
+  
